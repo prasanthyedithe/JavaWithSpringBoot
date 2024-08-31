@@ -1,0 +1,40 @@
+predicate
+	Predicate<String> pStr = s -> s.contains("City");
+	BiPredicate
+supplier
+	Supplier<StringBuilder> sspp = () -> new StringBuilder();
+	sspp.get().append("SK")
+consumer:Consumer<T> is a functional interface i.e. one abstract method:
+	Consumer<String> printC = s -> System.out.println(s);// lambda
+	BiConsumer<String, String> biCon = (key, value) -> mapCapitalCities.put(key, value);
+function
+	Function<String, Integer> fun = s -> s.length();
+	fun.apply("Prasanth")
+unaryBinaryOperations:UnaryOperator<T> extends Function<T, T> is a functional interface i.e. one abstract method:
+	UnaryOperator<String> unaryOp = name -> "My name is " + name;
+	System.out.println("UnaryOperator: " + unaryOp.apply("Sean"));// My name is Sean
+	BinaryOperator<String> binaryOp = (s1, s2) -> s1.concat(s2);
+
+
+
+
+staticMethodReferences:Static method references are considered UNBOUND also. An example static method
+	Consumer<List<Integer>> sortL = list -> Collections.sort(list);
+	
+constructorMethodReferences
+	Supplier<StringBuilder> sbL = () -> new StringBuilder();
+	Function<Integer, List<String>> alL = x -> new ArrayList(x);
+boundMethodReferences
+	Supplier<String> s1 = () -> name.toLowerCase();
+	Predicate<String> titleL = (title) -> name.startsWith(title);
+unboundMethodReferences
+	Function<String, String> str = s -> s.toLowerCase();
+	BiFunction<String, String, String> concatL = (s1, s2) -> s1.concat(s2);
+	
+
+
+
+
+
+
+
