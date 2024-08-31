@@ -1,3 +1,5 @@
+Functional API :
+
 predicate
 	Predicate<String> pStr = s -> s.contains("City");
 	BiPredicate
@@ -30,6 +32,7 @@ boundMethodReferences
 unboundMethodReferences
 	Function<String, String> str = s -> s.toLowerCase();
 	BiFunction<String, String, String> concatL = (s1, s2) -> s1.concat(s2);
+
 	
 
 
