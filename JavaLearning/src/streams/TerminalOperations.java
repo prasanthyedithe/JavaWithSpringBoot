@@ -13,12 +13,13 @@ public class TerminalOperations {
         doCollect1();
         doReduce1();
         doReduce2();
+        doReduce3();
         doForEach();
         doMatches();
         doFindAnyFindFirst();
         doCount();
        doMinAndMax();
-       doReduce3();
+
     }
     public static void doCollect1(){
         
@@ -77,10 +78,10 @@ public class TerminalOperations {
         // Sometimes it is nice to know if the stream is empty as opposed
         // to the case where there is a value returned from the accumulator
         // that happens to match the identity (however unlikely).
-        Integer val = Stream.of(1,1,1)
+        Integer val = Stream.of(1,2,3)
                 //     .filter(n -> n > 5)      // val is 1 this way
                        .reduce(1, (a, b) -> a );// val is 1 this way too
-        System.out.println(val);// 1
+        System.out.println("Val --------"+ val);// 1
     }
     public static void doReduce1(){
         
