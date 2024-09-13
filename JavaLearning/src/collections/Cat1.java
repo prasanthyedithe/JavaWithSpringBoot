@@ -1,12 +1,12 @@
 package collections;
 
-public class Cat {
+public class Cat1 {
     private String name;
     private int age;
 
-    public Cat() {
+    public Cat1() {
     }
-    public Cat(String name, int age) {
+    public Cat1(String name, int age) {
         this.name = name;
         this.age = age;
     }

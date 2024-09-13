@@ -8,7 +8,7 @@ public class PreGenerics {
         // A raw collection can hold any type of Object (except a primitive).
         List myList = new ArrayList();  // can't enforce a type
         myList.add("Fred");             // will hold Strings
-        myList.add(new Dog());          // and Dogs
+        myList.add(new Dog1());          // and Dogs
         myList.add(43);                 // and Integers (autoboxing)
         
         // As everything is treated as an Object, when you are getting something out of 

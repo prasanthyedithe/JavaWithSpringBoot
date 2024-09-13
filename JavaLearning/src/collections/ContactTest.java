@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 class ContactDetails {
-    private int age;
-    private String name;
+    public int age;
+    public String name;
 
     ContactDetails(String name, int age) {
         this.age  = age;

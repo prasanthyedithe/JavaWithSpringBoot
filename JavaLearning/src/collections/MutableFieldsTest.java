@@ -11,7 +11,7 @@ class MutableDog{
 
     @Override
     public boolean equals(Object obj){
-        if(obj instanceof Dog){
+        if(obj instanceof Dog1){
             MutableDog otherDog = (MutableDog)obj;
             return this.name.equals(otherDog.name);
         }else{

@@ -1,4 +1,4 @@
-package lets_get_certified.generics;
+package collections;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,18 +9,18 @@ public class UnboundedWildcard {
         for(Object o:list){
             System.out.println(o);
         }
-        list.add("test"); // <?> implies read-only
+        //list.add("test"); // <?> implies read-only
     }
     public static void main(String[] args) {
         // A different variation
         List<String> names = new ArrayList<String>();
         names.add("Sean");
         showList(names); // List<?> list = new ArrayList<String>();
-        List<Dog> dogs = new ArrayList<Dog>();
-        dogs.add(new Dog());
+        List<Dog1> dogs = new ArrayList<Dog1>();
+        dogs.add(new Dog1());
         showList(dogs); // List<?> list = new ArrayList<Dog>();
-        List<Cat> cats = new ArrayList<Cat>();
-        cats.add(new Cat());
+        List<Cat1> cats = new ArrayList<Cat1>();
+        cats.add(new Cat1());
         showList(cats); // List<?> list = new ArrayList<Cat>();
         
     }    

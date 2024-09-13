@@ -1,13 +1,13 @@
 package collections;
 
-public class Dog implements Comparable<Dog> {
+public class Dog1 implements Comparable<Dog1> {
     private String name;
     private Integer age;
 
-    public Dog(){
+    public Dog1(){
 
     }
-    public Dog(String name, Integer age) {
+    public Dog1(String name, Integer age) {
         this.name = name;
         this.age = age;
     }
@@ -23,8 +23,8 @@ public class Dog implements Comparable<Dog> {
     }
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof Dog){
-            Dog otherDog = (Dog)obj;
+        if(obj instanceof Dog1){
+            Dog1 otherDog = (Dog1)obj;
             if(name.equals(otherDog.getName()))
                 return true;
         }
@@ -37,7 +37,7 @@ public class Dog implements Comparable<Dog> {
         This is so because sorted sets (and sorted maps) without explicit comparators behave "strangely" when 
         they are used with elements (or keys) whose natural ordering is inconsistent with equals. */
     @Override
-    public int compareTo(Dog otherDog){ // specifies "natural ordering" for Dog
+    public int compareTo(Dog1 otherDog){ // specifies "natural ordering" for Dog
         // delegate to String which implements Comparable<String>
         return name.compareTo(otherDog.getName());// sorts alphabetically by name
     }

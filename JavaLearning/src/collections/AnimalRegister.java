@@ -22,8 +22,8 @@ class Register<T, U, V>{
 }
 public class AnimalRegister {
     public static void main(String[] args) {
-        new Register(new Dog(), "Shep", 3);
-        new Register(new Cat(), "Whiskers", 2);
+        new Register(new Dog1(), "Shep", 3);
+        new Register(new Cat1(), "Whiskers", 2);
     }
 }
 
